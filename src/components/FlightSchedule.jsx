@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Route, Switch, Link, useLocation } from "react-router-dom";
 import FlightsList from "./FlightsList";
-import NotFound from "./NotFound";
+import NotFlight from "./NotFlight";
 
 const FlightSchedule = () => {
   const [status, setStatus] = useState("departures");
@@ -51,7 +51,7 @@ const FlightSchedule = () => {
           <tbody>
             <Switch>
               <Route path={`/:direction?`} component={FlightsList} />
-              <Route component={NotFound} />
+              <Route component={NotFlight} />
             </Switch>
           </tbody>
         </table>
