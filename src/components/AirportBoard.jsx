@@ -12,9 +12,6 @@ const AirportBoard = ({ fetchFlightsList }) => {
 
   return (
     <div>
-      <header className="header">
-        <i className="fas fa-plane"></i>
-      </header>
       <SearchFlights />
       <FlightSchedule />
     </div>
