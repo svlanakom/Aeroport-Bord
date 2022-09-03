@@ -5,6 +5,7 @@ import qs from "qs";
 import { departureSelector, arrivalSelector } from "../redux/flight.selectors";
 import { fetchFlightsList } from "../redux/flight.actions";
 import Flight from "./Flight";
+import NotFlight from "./NotFlight";
 
 const FlightsList = ({ departureList, arrivalList }) => {
   const [flightsList, setFlightsList] = useState([]);
